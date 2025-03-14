@@ -886,10 +886,10 @@
         document.getElementById('thank-you-message').style.display = 'block';
       } else {
         response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
+          if (data.hasOwnProperty('errors')) {
             console.error('Error: ', data.errors);
           } else {
-            console.error('Oops! Algo salió mal.');  
+            console.error('Oops! Algo salió mal.');
           }
         });
       }
@@ -898,6 +898,7 @@
     });
   });
 </script>
+
 
 </body>
 
