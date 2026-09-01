@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://perazzoariel.com.ar/sitemap.xml
